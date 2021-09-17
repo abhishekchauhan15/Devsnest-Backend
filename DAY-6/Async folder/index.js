@@ -1,3 +1,11 @@
+// What is js ?
+// a sigle-threaded , non-blocking , asynchronous , coqueue, ncurrent programming language
+// it have call stack m an event loop , a calback queue , and other apis  , and stuff, 
+// js runs on v8 engion 
+// v8 is a javascript engine , it is a open source project , and it is a google product
+// it only have call stack , and heap 
+
+
 const fs = require('fs');
 
 fs.mkdir("folder_async", (err) => {

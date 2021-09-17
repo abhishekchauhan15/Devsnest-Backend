@@ -5,6 +5,16 @@ const app = express();
 
 app.listen(5000);
 
+//CRUD -> Create, Read, Update, Delete 
+//Things to note: Security , performance, edge cases
+
+
+app.get('/home', (req, res)=>{
+    res.send(req.query);
+}) 
+
+
+ 
 
 app.get("/withjson", (req, res) => {
     res.json({ a: 1 });
@@ -36,3 +46,11 @@ app.get("/users/:userID/book/:bookID", (req, res) => {
     // res.send(req.params.id);
 
 })
+
+
+
+//sendStatus 
+//200 -> everything went ok
+//201 -> updated successfully
+//400 -> nclint side validation error 
+//500 -> server side error
