@@ -57,18 +57,18 @@ const sendResponse =(req, res) => {
 
 
 //to handle form-data
-app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.urlencoded({ extended: true }));
 
-//for json 
-app.use(bodyParser.json());     
+// //for json 
+// app.use(bodyParser.json());     
 
-app.get("/", sendResponse)
+// app.get("/", sendResponse)
 
-app.post('/', (rew, res)=> {
-    console.log('req.body -> ', req.body);
-    res.json({text:req.body})
+// app.post('/', (rew, res)=> {
+//     console.log('req.body -> ', req.body);
+//     res.json({text:req.body})
 
-})
+// })
 
 
 
