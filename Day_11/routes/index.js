@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var registerInitialChecks= require('../middleWare/registerChecks')
-
+var register=require("../controlers/register")
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
@@ -24,6 +24,6 @@ router.get('/', function(req, res, next) {
  * 
  */
 
-router.post('/resigter',)
+router.post('/resigter', registerInitialChecks, register)
 
 module.exports = router;
