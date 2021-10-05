@@ -24,6 +24,6 @@ router.get('/', function(req, res, next) {
  * 
  */
 
-router.post('/resigter', registerInitialChecks, register)
+router.post('/register', registerInitialChecks, register)
 
 module.exports = router;
