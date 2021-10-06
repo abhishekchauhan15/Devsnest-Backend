@@ -1,9 +1,9 @@
-const {DataTypes} = require('sequelize');
-const sequilize = require('../Database');
+const {DataTypes} = require('sequelize'); 
+const sequilize = require('../Database'); 
 
 
 //these are databse checks
-const User = sequilize.define('user', {
+const User = sequilize.define('User', {
     fullName :{
         type:DataTypes.STRING,
         allowNull:false
@@ -20,4 +20,4 @@ const User = sequilize.define('user', {
     }
 });
 
-module.exports=user;
+module.exports=User;

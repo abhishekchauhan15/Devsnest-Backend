@@ -1,4 +1,4 @@
-const { Sequilize, Sequelize} = require("sequelize")
+const { Sequelize } = require("sequelize")
 
 const sequelize = new Sequelize(
     "postgres", //db name
@@ -6,12 +6,12 @@ const sequelize = new Sequelize(
     "12345", //password
     {
         host:"locahost",
-        dialect: "postgres",
+        dialect: "postgres",  //supose if we want to change the dialect to mysql, we can do it here
     }
 
 )
 
-Sequilize.sync();
+sequelize.sync();
 
 (async () =>{
     try{

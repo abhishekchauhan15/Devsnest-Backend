@@ -1,3 +1,8 @@
+//this is for level 1 checks
+// email validation 
+// passoword validation 
+// password ==confirm passoword
+
 const { emailValidate, passwordValidate } = require("../utlis/Validation");
 
 const registerInitialChecks = (req, res, next) => {
@@ -15,7 +20,7 @@ const registerInitialChecks = (req, res, next) => {
   ) {
     next();
   } else {
-    return res.status(400).json({
+    return res.status(401).json({
       error: "email, password and confirmPassword must be string",
     });
   }
