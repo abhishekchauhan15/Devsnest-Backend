@@ -12,3 +12,6 @@ for hashing
 npm i -s bcrypt
 
 npm i -s pg   
+
+start postgrese by
+sudo systemctl start/stop/restart postgresql(application)  //background  
