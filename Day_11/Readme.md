@@ -15,3 +15,8 @@ npm i -s pg
 
 start postgrese by
 sudo systemctl start/stop/restart postgresql(application)  //background  
+
+
+day 12
+npm i -s express-session redis connect-redis
+redis is used so that we can we the information immediately

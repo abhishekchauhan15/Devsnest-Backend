@@ -16,7 +16,7 @@ const registerInitialChecks = (req, res, next) => {
     password.length > 0 &&
     confirmPassword === password &&
     emailValidate(email) &&
-    passwordValidate(password)
+    passwordValidate(password)  // this is for level 1 checks
   ) {
     next();
   } else {
